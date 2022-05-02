@@ -162,7 +162,7 @@ app.get('/todos/:id', async(req, res) => {
 ### Model
 In order to get our todos we'll add a static findById method that will get a todo from the todos PersistentUnorderedMap using the getSome method.
 ```ts
-In order to get our todos we'll add a static findById method that will get a todo from the todos PersistentUnorderedMap using the getSome method.// contract/assembly/model.ts
+// contract/assembly/model.ts
 import { PersistentUnorderedMap, math } from "near-sdk-as";
 
 export const todos = new PersistentUnorderedMap<u32, Todo>("todos");
