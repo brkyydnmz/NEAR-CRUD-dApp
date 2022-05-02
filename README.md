@@ -152,6 +152,7 @@ And finally we can test our deployed smart contract:
 ```ts
 near call $CONTRACT create '{"task":"Drink water"}' --accountId YOUR_ACCOUNT_ID.testnet
 ```
+<a href="https://explorer.testnet.near.org/transactions/6W3pPa6CoZQ4MXYKJjAcsevGaVdrfJ4aMctKP46Yz8ff" target="_blank">Create on BlockChain</a>
 
 ## R - Read by id
 Now that we've created a todo, let's retrieve the todo using a getById method. In web2 this functionality might be accomplished with an express endpoint like this:
@@ -220,6 +221,7 @@ Replace SOME_ID_HERE with the id that was logged when we used the create method 
 ```ts
 near view $CONTRACT getById '{"id":SOME_ID_HERE}' --accountId YOUR_ACCOUNT_ID.testnet
 ```
+
 
 ## R - Read List
 Next we'll want to get a paged list of results back from our smart contract. We don't want to return all todos (there may be too many). Instead, we want to return a subset of todos. To do this we'll use the offset (how many to skip) and limit (how many to get) patterns.
@@ -366,6 +368,8 @@ And finally we can test our deployed smart contract.Replace SOME_ID_HERE with th
 ```ts
 near call $CONTRACT update '{"id":SOME_ID_HERE, "updates":{"done":true, "task":"Drink nothing"} }' --accountId YOUR_ACCOUNT_ID.testnet
 ```
+<a href="https://explorer.testnet.near.org/transactions/Hx3sXNzwLQmvKWvp38MenxxjdFJzF4piwnUHQ2qEFKSb" target="_blank">Update on BlockChain</a>
+
 ## D - Delete
 Last but not least, let's delete a todo using a del method.
 ### Model
@@ -428,3 +432,5 @@ And finally, we can test our deployed smart contract:
 ```ts
 near call $CONTRACT del '{"id":SOME_ID_HERE }' --accountId YOUR_ACCOUNT_ID.testnet
 ```
+
+<a href="https://explorer.testnet.near.org/transactions/FxkwqJz68yorX5BRs8YuoLfXVUfNQ4mxZZeGQC5DTEC" target="_blank">Update on BlockChain</a>
