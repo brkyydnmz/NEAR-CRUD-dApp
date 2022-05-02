@@ -8,10 +8,14 @@ Setup​ pre-requisites​:
 
 You need near-cli installed globally. Here's how:
 
-'npm install --global near-cli'
+```ts
+npm install --global near-cli
+```
 This will give you the near CLI tool. Ensure that it's installed with:
 
-'near --version'
+```ts
+near --version
+```
 In this tutorial we will be building a standard Create-Read-Update-Delete (CRUD) Smart Contract on the blockchain.
 
 ## Smart Contract
